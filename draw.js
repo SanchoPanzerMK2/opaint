@@ -1,5 +1,5 @@
 var canvas = document.getElementById('canvas');
-context = canvas.getContext("2d");
+var context = canvas.getContext("2d");
 
 $('#canvas').mousedown(function(e){
 	  var mouseX = e.pageX - this.offsetLeft;
