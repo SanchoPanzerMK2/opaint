@@ -5,8 +5,8 @@ canvas.setAttribute('height', 480);
 canvas.setAttribute('id', 'canvas');
 canvasDiv.appendChild(canvas);
 if(typeof G_vmlCanvasManager != 'undefined') {
-	canvas = G_vmlCanvasManager.initElement(canvas);*/
-}
+	canvas = G_vmlCanvasManager.initElement(canvas);
+}*/
 context = canvas.getContext("2d");
 
 $('#canvas').mousedown(function(e){
