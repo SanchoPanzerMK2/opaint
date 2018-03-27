@@ -1,5 +1,6 @@
+function loader(){
 var canvas = document.getElementById('canvas');
-var context = canvas.getContext("2d");
+var context = canvas.getContext('2d');
 
 $('#canvas').mousedown(function(e){
 	  var mouseX = e.pageX - this.offsetLeft;
@@ -56,3 +57,4 @@ function redraw(){
 	     context.stroke();
 	  }
 	}
+}
