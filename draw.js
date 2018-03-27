@@ -1,12 +1,4 @@
 var canvas = document.getElementById('canvas');
-/*canvas = document.createElement('canvas');
-canvas.setAttribute('width', 640);
-canvas.setAttribute('height', 480);
-canvas.setAttribute('id', 'canvas');
-canvasDiv.appendChild(canvas);
-if(typeof G_vmlCanvasManager != 'undefined') {
-	canvas = G_vmlCanvasManager.initElement(canvas);
-}*/
 context = canvas.getContext("2d");
 
 $('#canvas').mousedown(function(e){
