@@ -66,8 +66,13 @@ $( document ).ready(function(e){
         redraw();
 
     });
-	var img = document.getElementById('acceptfile');
-	$('#acceptfile').onsubmit(function (e) {
-		//canvas.drawImage(img,0,0);
+	//var imgcontext = document.getElementById('acceptfile').msGetInputContext();
+	//var img = imgcontext.getAsFile();
+	//$('#acceptfile').onchange(function (e) {
+	//	context.drawImage(img,0,0);
+    //});
+    $("#flat").spectrum({
+        flat: true,
+        showInput: true
     });
 });
