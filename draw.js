@@ -58,13 +58,16 @@ $( document ).ready(function(e){
 		}
 	}
     $('#clearbutton').click(function (e) {
-        context.clearRect(0,0,context.canvas.width,context.canvas.height);
-        clickX=0;
-        clickY=0;
-        clickDrag=0;
+        context.clearRect(0,0,canvas.width,canvas.height);
+        for (var i=0; i<clickX.length; i++){
+            clickX[i]=0;
+            clickY[i]=0;
+        }
+        redraw();
+
     });
 	var img = document.getElementById('acceptfile');
 	$('#acceptfile').onsubmit(function (e) {
-		canvas.drawImage(img,0,0);
+		//canvas.drawImage(img,0,0);
     });
 });
